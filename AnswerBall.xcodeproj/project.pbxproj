@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EC76F7801CBA16B100841200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76F77F1CBA16B100841200 /* AppDelegate.swift */; };
-		EC76F7821CBA16B100841200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76F7811CBA16B100841200 /* ViewController.swift */; };
 		EC76F7851CBA16B100841200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76F7831CBA16B100841200 /* Main.storyboard */; };
 		EC76F7871CBA16B100841200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC76F7861CBA16B100841200 /* Assets.xcassets */; };
 		EC76F78A1CBA16B100841200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76F7881CBA16B100841200 /* LaunchScreen.storyboard */; };
 		EC76F7951CBA16B100841200 /* AnswerBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76F7941CBA16B100841200 /* AnswerBallTests.swift */; };
 		EC76F7A01CBA16B100841200 /* AnswerBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76F79F1CBA16B100841200 /* AnswerBallUITests.swift */; };
+		EC76F7AE1CBA177A00841200 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76F7AD1CBA177A00841200 /* MainVC.swift */; };
+		EC76F7B21CBB52B500841200 /* Shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC76F7B11CBB52B500841200 /* Shakesound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		EC76F77C1CBA16B100841200 /* AnswerBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnswerBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC76F77F1CBA16B100841200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC76F7811CBA16B100841200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC76F7841CBA16B100841200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC76F7861CBA16B100841200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC76F7891CBA16B100841200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		EC76F79B1CBA16B100841200 /* AnswerBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnswerBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC76F79F1CBA16B100841200 /* AnswerBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBallUITests.swift; sourceTree = "<group>"; };
 		EC76F7A11CBA16B100841200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC76F7AD1CBA177A00841200 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		EC76F7B11CBB52B500841200 /* Shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shakesound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				EC76F77F1CBA16B100841200 /* AppDelegate.swift */,
-				EC76F7811CBA16B100841200 /* ViewController.swift */,
 				EC76F7831CBA16B100841200 /* Main.storyboard */,
 				EC76F7861CBA16B100841200 /* Assets.xcassets */,
 				EC76F7881CBA16B100841200 /* LaunchScreen.storyboard */,
 				EC76F78B1CBA16B100841200 /* Info.plist */,
+				EC76F7AD1CBA177A00841200 /* MainVC.swift */,
+				EC76F7B11CBB52B500841200 /* Shakesound.wav */,
 			);
 			path = AnswerBall;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					EC76F77B1CBA16B100841200 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5F9HZUY9PG;
 					};
 					EC76F78F1CBA16B100841200 = {
 						CreatedOnToolsVersion = 7.3;
@@ -232,6 +236,7 @@
 				EC76F78A1CBA16B100841200 /* LaunchScreen.storyboard in Resources */,
 				EC76F7871CBA16B100841200 /* Assets.xcassets in Resources */,
 				EC76F7851CBA16B100841200 /* Main.storyboard in Resources */,
+				EC76F7B21CBB52B500841200 /* Shakesound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC76F7821CBA16B100841200 /* ViewController.swift in Sources */,
 				EC76F7801CBA16B100841200 /* AppDelegate.swift in Sources */,
+				EC76F7AE1CBA177A00841200 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +406,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnswerBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joemccorison.AnswerBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +421,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnswerBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joemccorison.AnswerBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

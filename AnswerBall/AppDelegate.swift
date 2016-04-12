@@ -16,7 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        setAppearance()
         return true
+    }
+    
+    func setAppearance() {
+        let navbarStyle = UINavigationBar.appearance()
+        navbarStyle.barTintColor = UIColor.purpleColor()
+        navbarStyle.tintColor = UIColor.whiteColor()
+        navbarStyle.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
 
     func applicationWillResignActive(application: UIApplication) {
